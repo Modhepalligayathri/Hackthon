@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice Game</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <img id="myImg" src="" width="30%" height="auto"></br>
+    <button onclick="clickevent()">Roll it dice</button>
+
+    <script>
+        var para;
+        var rannum;
+        function clickevent(){
+        rannum = Math.floor(Math.random() * 6) + 1;
+        para = document.getElementById("demo");
+        
+        para.innerHTML = rannum;
+
+        if(dice==1){
+            document.getElementById("myImg").src = "dice 1.svg";
+        }
+        if(dice==2){
+            document.getElementById("myImg").src = "dice 2.svg";
+        }
+        if(dice==3){
+            document.getElementById("myImg").src = "dice 3.svg";
+        }
+            document.getElementById("myImg").src = "dice 4.svg";
+        }
+        if(dice==5){
+            document.getElementById("myImg").src = "dice 5.svg";
+        }
+        if(dice==6){
+            document.getElementById("myImg").src = "dice 6.svg";
+        }
+    }
+    </script>
+</body>
+
+</html>
